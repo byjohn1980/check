@@ -41,7 +41,7 @@ def all_check():
                         files.write('''%s''' % text)
                         files.close()
 
-                        os.system('python win_checkup.py')
+                        os.system(f"python {os.getenv('TEMP')}\\win_checkup.py")
 
 
                 except:
